@@ -19,6 +19,7 @@ export const mapDispatchToProps = (dispatch, ownProps) => ({
       ownProps.trace,
       !ownProps.subMenuVisibility,
     ));
+    dispatch(emitSelected(ownProps.reduxUid, e));
   },
   activateMe(e) {
     dispatch(emitSelected(ownProps.reduxUid, e));
